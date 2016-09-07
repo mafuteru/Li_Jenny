@@ -14,8 +14,8 @@ public class lab_02
 		int w = 66;
 		int surArea = 2*(w*l+h*l+h*w);
 		
-	System.out.println(times1 +" multiplied by " +times2 +" is " +product +"\n");
-	System.out.println(name +"\n" +address +"\n" +city +" " +zip +"\n");
+	System.out.println(times1 +" multiplied by " +times2 +" is " +product);
+	System.out.println(name +"\n" +address +"\n" +city +" " +zip);
 	System.out.println("The surface area of your rectangular cube is "+surArea);
 	}
 }
