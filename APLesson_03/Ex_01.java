@@ -7,13 +7,17 @@ public class Ex_01
 		Scanner keyboard = new Scanner(System.in); 
 		System.out.println("What is your name?");
 		
-		String name = keyboard.next();
+		String name = keyboard.next(); //next() takes single-word String and exists at the first sign of white space
 		System.out.println(name+"??!!! Why would anyone name a baby that? \nHow old are you, "+name+"?");
 		
 		int age = keyboard.nextInt();
 		System.out.println("A "+age+"-year-old is but a young grasshopper. \nWhat do you do for fun, "+name+"?");
 		
-		keyboard.nextLine();
+		//nextLine() reads a line of text and exists after it reads a return character. 
+		//but you hit "Enter" already ater inputing the age from above, with is the first thing that kb.nextLine() sees
+		//so, nextLine() will read the return character and exit before reading any other String data
+		//so another keybard.nextLine() is needed above the hobby statement to absorb the return
+		keyboard.nextLine(); 
 		String hobby = keyboard.nextLine();
 		System.out.println("I thought only savages like to "+hobby+".\nWhat kind of music do you like?");
 		
