@@ -14,7 +14,7 @@ public class Ex_01
 		System.out.println("A "+age+"-year-old is but a young grasshopper. \nWhat do you do for fun, "+name+"?");
 		
 		//nextLine() reads a line of text and exists after it reads a return character. 
-		//but you hit "Enter" already ater inputing the age from above, with is the first thing that kb.nextLine() sees
+		//but you hit "Enter" already after inputing the age from above, with is the first thing that kb.nextLine() sees
 		//so, nextLine() will read the return character and exit before reading any other String data
 		//so another keybard.nextLine() is needed above the hobby statement to absorb the return
 		keyboard.nextLine(); 
