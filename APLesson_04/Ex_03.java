@@ -29,6 +29,6 @@ public class Ex_03
 	public double payment(double r, double p, double n, double t)
 	{
 		//all your math goes here
-		return (p*(Math.pow(1+(r/n), n*t)))/(t*12);
+		return (p*(Math.pow(1+r/n, n*t)))/(t*12);
 	}
 }
