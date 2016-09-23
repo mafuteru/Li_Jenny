@@ -27,12 +27,9 @@ public class Lab_04_01
 		System.out.println("Please enter the price:");
 		double price3 = kb.nextDouble();
 		
-		String subtot = "Subtotal:";
-		double subtotNum = price1+price2+price3;
-		String tax = "Tax:";
-		double taxNum = subtotNum*1.075;
-		String tot = "Total:";
-		double totNum = subtotNum+taxNum;
+		double subtot = price1+price2+price3;
+		double tax = subtot*1.075;
+		double tot = subtot+tax;
 		
 		System.out.println("<<<<<<<<<<<<<<<__Receipt__>>>>>>>>>>>>>>>>\n");
 		
@@ -41,18 +38,18 @@ public class Lab_04_01
 		form.format(item3,price3);
 		
 		System.out.println("\n");
-		form.format(subtot,subtotNum);
-		form.format(tax,taxNum);
-		form.format(tot,totNum);
+		form.format("Subtotal: ",subtot);
+		form.format("Tax: ",tax);
+		form.format("Total: ",tot);
 		
 		System.out.println("\n__________________________________________");
 		System.out.println(" * Thank you for your support *");
 		
 	}
 	 
-	public void format(String word, double number)
+	public void format(String item, double price)
 	{
-		System.out.printf("\n* %18s ........ %8.2f",word,number);
+		System.out.printf("\n* %18s ........ %8.2f",item,price);
 	}	
 	 
 }
