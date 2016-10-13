@@ -58,8 +58,8 @@ public class Ex_05
 							   "\nYour head filled with all the knowledge you have gained, you eagerly hop onto your boat and paddle home."+
 							   "\nSoon, you become a world-renowned chef and horticulture specialist, cultivating and cooking vegetables for people all across the world."+
 							   "\nWhen you are 80 years old, you go into retirement. Yet, you live your entire life full of constant stress and anxiety."+
-							   "\nIt was as if for all of these years, you'd left something unfinished on that island, something fame and riches can't replace."+
-							   "\nThese questions still unanswered, you suddenly have a heart attack. You die unfilfilled.");
+							   "\nIt was as if for all of these years, you'd left something unfinished on that island, something fame and riches couldn't replace."+
+							   "\nThese questions still unanswered, you suddenly have a heart attack. \nYou die unfilfilled.");
 			}
 			if(choice5==1)
 			{
