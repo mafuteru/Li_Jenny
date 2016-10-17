@@ -22,48 +22,48 @@ public class quiz_04
 
 //Question 3 (fixed)
 // numPrint must be static
-// {
-	// static int num1 = 5;
-	// static int num2 = 7;
-	// static int num3 = 9;
-	
-	// public static void main(String[]args)
-	// {
-		// numPrint(num1,num2,num3);
-	// }
-	
-	// public static int calcAvg(int one, int two, int three)
-	// {
-		// return (one+two+three)/3;
-	// }
-	// public static void numPrint(int one, int two, int three)
-	// {
-		// double avg=calcAvg(one,two,three);
-		// System.out.println("The average of "+one+" "+two+" "+three+" is "+avg);
-	// }
-// }
-
-//Question 4 
 {
+	static int num1 = 5;
+	static int num2 = 7;
+	static int num3 = 9;
+	
 	public static void main(String[]args)
 	{
-		Scanner kb = new Scanner(System.in);
-		System.out.println("What is the length of one side of the cube in inches?");
-		int side = kb.nextInt();
-		surfPrint(side);
+		numPrint(num1,num2,num3);
 	}
 	
-	public static double calcSurf(int side)
+	public static int calcAvg(int one, int two, int three)
 	{
-		return 6*(Math.pow(side,2));
+		return (one+two+three)/3;
 	}
-	
-	public static void surfPrint(int side)
+	public static void numPrint(int one, int two, int three)
 	{
-		System.out.printf("The surface area of your cube is %.5f inches",calcSurf(side));
+		double avg=calcAvg(one,two,three);
+		System.out.println("The average of "+one+" "+two+" "+three+" is "+avg);
 	}
-
 }
+
+//Question 4 
+// {
+	// public static void main(String[]args)
+	// {
+		// Scanner kb = new Scanner(System.in);
+		// System.out.println("What is the length of one side of the cube in inches?");
+		// int side = kb.nextInt();
+		// surfPrint(side);
+	// }
+	
+	// public static double calcSurf(int side)
+	// {
+		// return 6*(Math.pow(side,2));
+	// }
+	
+	// public static void surfPrint(int side)
+	// {
+		// System.out.printf("The surface area of your cube is %.5f inches",calcSurf(side));
+	// }
+
+// }
 
 //Question 5-> ?
 
