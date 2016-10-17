@@ -22,26 +22,26 @@ public class quiz_04
 
 //Question 3 (fixed)
 // numPrint must be static
-{
-	static int num1 = 5;
-	static int num2 = 7;
-	static int num3 = 9;
+// {
+	// static int num1 = 5;
+	// static int num2 = 7;
+	// static int num3 = 9;
 	
-	public static void main(String[]args)
-	{
-		numPrint(num1,num2,num3);
-	}
+	// public static void main(String[]args)
+	// {
+		// numPrint(num1,num2,num3);
+	// }
 	
-	public static int calcAvg(int one, int two, int three)
-	{
-		return (one+two+three)/3;
-	}
-	public static void numPrint(int one, int two, int three)
-	{
-		double avg=calcAvg(one,two,three);
-		System.out.println("The average of "+one+" "+two+" "+three+" is "+avg);
-	}
-}
+	// public static int calcAvg(int one, int two, int three)
+	// {
+		// return (one+two+three)/3;
+	// }
+	// public static void numPrint(int one, int two, int three)
+	// {
+		// double avg=calcAvg(one,two,three);
+		// System.out.println("The average of "+one+" "+two+" "+three+" is "+avg);
+	// }
+// }
 
 //Question 4 
 // {
@@ -65,7 +65,30 @@ public class quiz_04
 
 // }
 
-//Question 5-> ?
+//Question 5
+{
+	public static void main(String[]args)
+	{
+		Scanner kb = new Scanner(System.in);
+		System.out.println("What is your first number?");
+		int num1 = kb.nextInt();
+		System.out.println("What is your second number?");
+		int num2 = kb.nextInt();
+		sumPrint(num1,num2);
+	}
+	
+	public static double calcSum(int one, int two)
+	{
+		return one+two;
+	}
+	
+	public static void sumPrint(int one, int two)
+	{
+		System.out.printf("The sum of " +one+" and "+two+" is %.2f",calcSum(one,two));
+	}
+
+}
+
 
 //Question 6 (fixed)
 //re-defining variables: double area= 3.14*(radius*radius); will produce 0.000
