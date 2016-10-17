@@ -11,7 +11,7 @@ public class Ex_05
 	public static void adv()
 	{
 		System.out.println("The Quest for the Wifi Password");
-		System.out.println("\nYou're stranded on a boat in the middle of the ocean and see an island in the distance."
+		System.out.println("\nYou're stranded on a boat in the middle of the ocean and see an island in the distance."+
 							"\n 1. Row to the island"+
 							"\n 2. Stay on the boat");
 		int choice1=kb.nextInt();
@@ -45,9 +45,11 @@ public class Ex_05
 								   "In fact, he is so excited to receive your gift that he tells you the wifi password!"+
 								   "\nThe password is \"crumpet.\" You can finally be at peace.\n\n*********THE END*********");
 					}
-					if(choice7==5)
+					else if(choice7==5)
+					{
 						System.out.println("The man is allergic to fruits. How insensitive of you.\nFailing to befriend him, you never receive the wifi password."+
 								   "\nYou die from withdrawal.");
+					}
 					else
 						System.out.println("The man is allergic to vegetables. How insensitive of you.\nFailing to befriend him, you never receive the wifi password."+
 								   "\nYou die from withdrawal.");
@@ -61,14 +63,14 @@ public class Ex_05
 							   "\nIt was as if for all of these years, you'd left something unfinished on that island, something fame and riches couldn't replace."+
 							   "\nThese questions still unanswered, you suddenly have a heart attack. \nYou die unfilfilled.");
 			}
-			if(choice5==1)
+			else if(choice5==1)
 			{
 				System.out.println("You strike up a conversation. The pink man seems very distressed by all this social interaction. He doesn't know how to respond."+	
 							"\n 1. Comfort him"+
 							"\n 2. Tell a story about a hamster");
 				int choice8=kb.nextInt();
 				if(choice8==2)
-					System.out.println("You try telling a story to lighten the mood, but it's so bad that you start crying."
+					System.out.println("You try telling a story to lighten the mood, but it's so bad that you start crying."+
 							  "\nTears streaming down your cheeks, you ask him if the island has wifi. He tells you the password out of pity."+
 							  "\nYou can finally be at peace.\n\n*********THE END*********");
 				else
@@ -81,15 +83,15 @@ public class Ex_05
 						  "\nMistakingly believing that you're a thief, the man chases after you with a large axe. You never make it to the boat."+
 						  "\nYou die a harrowing death.");
 		}
-		else(choice1==2) 
+		else
 		{
-			System.out.println("Bad decision. A shark swims dramatically up to your boat."
+			System.out.println("Bad decision. A shark swims dramatically up to your boat."+
 								"\n 1. Try to paddle away"+
 								"\n 2. Throw a lamp at the shark");
 			int choice2=kb.nextInt();
 			if(choice2==1)
 			{
-				System.out.println("Sweat pours down your spine as you try to paddle, but you've only moved a foot."
+				System.out.println("Sweat pours down your spine as you try to paddle, but you've only moved a foot."+
 								"\nYou realize that this is because you haven't exercised in six years.\nThe shark approaches."+
 								"\n 1. Scream vigorously"+
 								"\n 2. Succumb to fate");
@@ -105,7 +107,7 @@ public class Ex_05
 			
 			else
 			{
-				System.out.println("You don't have any lamps."
+				System.out.println("You don't have any lamps."+
 								"\n 1. ...Oh."+
 								"\n 2. Throw a fish at the shark");
 				int choice4=kb.nextInt();
