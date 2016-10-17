@@ -42,7 +42,7 @@ public class Ex_05
 					if(choice7==4)
 					{
 						System.out.println("Great choice; it turns out the man is British."+
-								   "In fact, he is so excited to receive your gift that he tells you the wifi password!"+
+								   "\nIn fact, he is so excited to receive your gift that he tells you the wifi code!"+
 								   "\nThe password is \"crumpet.\" You can finally be at peace.\n\n*********THE END*********");
 					}
 					else if(choice7==5)
@@ -102,7 +102,8 @@ public class Ex_05
 								"\nThe shark is sick of your nonsense and chomps more fervently.\nYou die a gruesome death.");
 				}
 				else
-					System.out.println("The brave decision. Sometimes you just have to know when to quit.\nYou die peacefully.");
+					System.out.println("The brave decision. Sometimes you just have to know when to quit."+
+										"\nThe shark respects your fatalism and devours you serenely. \nYou die peacefully.");
 			}
 			
 			else
