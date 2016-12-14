@@ -26,12 +26,12 @@ public class Ex_06_Health
 		System.out.println("You died!!!");
 	}
 	
-	public static String takeDamage(int dmg, int amt)
+	public static void takeDamage(int dmg, int amt)
 	{
 		if(dmg==1)
 		{
 			healthCount-=amt;
-			return "Taking "+amt+" damage!";
+			System.out.println("Taking "+amt+" damage!");
 		}
 		else
 		{
@@ -43,7 +43,7 @@ public class Ex_06_Health
 			{
 				healthCount=healthload;
 			}
-			return "Power Up "+amt+" !";
+			System.out.println("Power Up "+amt+" !");
 		}
 	}
 	
