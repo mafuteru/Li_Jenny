@@ -20,18 +20,18 @@ public class Ex_06_Health
 			turn=kb.next();
 			damage=(int)(Math.random()*2+1);
 			amount=(int)(Math.random()*6+1);
-			takeDamage(damage,amount);
+			System.out.println(takeDamage(damage,amount));
 			printClip();
 		}
 		System.out.println("You died!!!");
 	}
 	
-	public static void takeDamage(int dmg, int amt)
+	public static String takeDamage(int dmg, int amt)
 	{
 		if(dmg==1)
 		{
 			healthCount-=amt;
-			System.out.println("Taking "+amt+" damage!");
+			return ("Taking "+amt+" damage!");
 		}
 		else
 		{
@@ -43,7 +43,7 @@ public class Ex_06_Health
 			{
 				healthCount=healthload;
 			}
-			System.out.println("Power Up "+amt+" !");
+			return ("Power Up "+amt+" !");
 		}
 	}
 	
