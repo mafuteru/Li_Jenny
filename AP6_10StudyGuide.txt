@@ -19,6 +19,7 @@ APLabs_06-10: Study Guide
 17: E
 18: C
 19: D
+**note: ininite loop= no escape condition to exit a loop
 
 1. int[] arr=new int[4] //creates an arra with 4 positions, filled with zeros by default
 
