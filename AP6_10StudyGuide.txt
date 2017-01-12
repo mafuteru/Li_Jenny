@@ -194,3 +194,23 @@ public void insert(List <String> list, String element)
 //Eventually index incremeted to a value out of bounds; Index out of bounds error 
 
 
+
+Study Guide (Part 2):
+9. Which causes error
+List <Integer> numList = new ArrayList<>();
+List <String> intList;
+ArrayList<boolean>compList = new ArrayList<boolean>();
+
+Answer: C; can declare a List as an ArrayList. But ArrayLists can only contain objects, not primitive values. 
+To fix: ArrayList<Boolean>compList = new ArrayList<Boolean>();
+
+17. cannot add Integer object to a list of strings
+
+18. Which causes error
+static List<Integer> numbers = new ArrayList<Integer>();
+static String space = " ";
+static String word = "Numbers:";
+
+Answer: E
+
+
