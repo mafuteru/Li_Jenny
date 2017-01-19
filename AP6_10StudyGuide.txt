@@ -19,7 +19,7 @@ APLabs_06-10: Study Guide
 17: E
 18: C
 19: D
-**note: ininite loop= no escape condition to exit a loop
+**note: infinite loop= no escape condition to exit a loop
 
 1. int[] arr=new int[4] //creates an arra with 4 positions, filled with zeros by default
 
@@ -190,6 +190,8 @@ public void insert(List <String> list, String element)
 }
 
 //compareTo: which one comes first in the alphabet; <0 means it comes before in the alphabet/dictionary
+	//If element is less than the compared word (comes before the compared word), negative returned
+
 //if element is aways smaller than the last item on the list, it will be compared with every item in the list
 //Eventually index incremeted to a value out of bounds; Index out of bounds error 
 
@@ -211,6 +213,20 @@ static List<Integer> numbers = new ArrayList<Integer>();
 static String space = " ";
 static String word = "Numbers:";
 
-Answer: E
+E. String nString = "" + numbers[0];
+
+numbers is an ArrayList; cannot call an index directly as you can with a regular Array
+need ArrayList.get() method:
+
+Correct: String nString = "" + numbers.get(0); //.get(x) returns value at given index x
+//.add(x) adds values to the end of the list
+//.set(x,y); overwrites the values at an INDEX x with y
+//.remove(x); deletes value at position x
+//.size() returns the length of the ArrayList (with parentheses)
+
+//ArrayLists can shrink or grow (unlike static arrays); items can be added or removed; 
+can print ArrayLists directly with println
+
+19. Array.length property is for static arrays, not ArrayLists
 
 
