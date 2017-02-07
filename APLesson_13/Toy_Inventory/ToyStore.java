@@ -1,6 +1,6 @@
 public class ToyStore
 {
-	public ArrayList<Toy> toyList= new ArrayList<Toy>(); //Public or private?
+	private ArrayList<Toy> toyList= new ArrayList<Toy>(); //Public or private?
 	
 	
 	//what is the actual output of this entire thing
@@ -8,14 +8,6 @@ public class ToyStore
 	{
 		String ts="Hotwheel, Car, G.I.Joe, AF, PennyRacer, Car, "+ 
 				"Matchbox, Car, Star Wars, AF, Pullback, Car, Star Wars, AF";
-				
-		toString();
-		
-		System.out.println("\nMost frequent toy:");
-		getMostFrequentToy();
-		
-		System.out.println("\nMost frequent type:");
-		getMostFrequentType();
 	}
 	
 	//Constructors- are these right?
@@ -40,13 +32,13 @@ public class ToyStore
 			Toy object = new Toy(getThatToy(name));
 			if(getThatToy(name)==null)
 			{
-				if((b.getType()).equals("Car"))) //errors errors everywhere
+				if((toys.getType()).equals("Car"))) //errors errors everywhere
 					toyList.add(new Car(name));
-				else if((b.getType()).equals("AF"))) 
+				else if((toys.getType()).equals("AF"))) 
 					toyList.add(new AFigure(name));
 			}
 			else
-				b.setCount(b.getCount()+=1);
+				toys.setCount(toys.getCount()+=1);
 			
 			}
 			
