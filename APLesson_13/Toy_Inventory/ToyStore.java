@@ -7,9 +7,9 @@ public class ToyStore
 	public static void main (String[]args)
 	{
 		String ts="Hotwheel, Car, G.I.Joe, AF, PennyRacer, Car, "+ 
-				"Matchbox, Car, Star Wars, AF, Pullback, Car, Star Wars, AF";
+				"Matchbox, Car, Star Wars, AF, Pullback, Car, Star Wars, AF"; //how does it know Hotwheels are Cars
 				
-		toString();
+		toString(); //where to call this?
 		
 		System.out.println("\nMost frequent toy:");
 		getMostFrequentToy();
