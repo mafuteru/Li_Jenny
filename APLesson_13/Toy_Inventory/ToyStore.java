@@ -1,27 +1,19 @@
+import java.util.ArrayList;
 public class ToyStore
 {
-	public ArrayList<Toy> toyList= new ArrayList<Toy>(); //Public or private?
-	
-	
+	private ArrayList<Toy> toyList; //Public or private?
 	//what is the actual output of this entire thing
-	public static void main (String[]args)
-	{
-		String ts="Hotwheel, Car, G.I.Joe, AF, PennyRacer, Car, "+ 
-				"Matchbox, Car, Star Wars, AF, Pullback, Car, Star Wars, AF"; //how does it know Hotwheels are Cars
-				
-		toString(); //where to call this?
-		
-		System.out.println("\nMost frequent toy:");
-		getMostFrequentToy();
-		
-		System.out.println("\nMost frequent type:");
-		getMostFrequentType();
-	}
+	//how does it know Hotwheels are Cars
+	// public static void main (String[]args)
+	// {
+		// String ts="Hotwheel, Car, G.I.Joe, AF, PennyRacer, Car, "+ 
+				// "Matchbox, Car, Star Wars, AF, Pullback, Car, Star Wars, AF"; 
+	// }
 	
 	//Constructors- are these right?
 	public ToyStore()
 	{
-		this.toyList="";
+		toyList= new ArrayList<Toy>(); //what do I initialize here??
 	}
 	
 	public ToyStore(String ts) 
@@ -32,61 +24,66 @@ public class ToyStore
 	
 	public static void loadToys(String ts)
 	{
-		String[] toys=ts.split(", ");
-		for(int i=0; i<toys.length; i++)
+		ArrayList<String> toys = new ArrayList<String>(Arrays.asList(ts.split(", ")));
+		for(int i=0; i<toys.size(); i++)
 		{
 			String name=toys[i];
 			String type=toys[i+1];
-			Toy object = new Toy(getThatToy(name));
-			if(getThatToy(name)==null)
+			
+			// Car object = new Car(getThatToy(name));
+			// AFigure object2 = new AFigure(getThatToy(name));
+			
+			for(Toy x:toyList) // non-static variable toyList cannot be referenced from a static context
 			{
-				if((b.getType()).equals("Car"))) //errors errors everywhere
-					toyList.add(new Car(name));
-				else if((b.getType()).equals("AF"))) 
-					toyList.add(new AFigure(name));
-			}
-			else
-				b.setCount(b.getCount()+=1);
-			
+				if(getThatToy(name)==null)
+				{
+					if(x.getType().equals("Car")) 
+						toyList.add(new Car(name));
+					else if(x.getType().equals("AF")) 
+						toyList.add(new AFigure(name));
+				}
+				else
+					count++;
+					// toys.setCount(toys.getCount()+=1);
 			}
 			
 		}
 	}
 	
-	public static void getThatToy(String nm)
+	public static String getThatToy(String nm)
 	{
-		for(Toy b:toyList)
+		for(Toy x:toyList)
 		{
-			if(b.equals(nm)
-				return b;
-			return null;
+			if(x.getName().equals(nm))
+				return x.getName();
 		}
+		return null;
 	}
 	
-	public static void getMostFrequentToy()
+	public static String getMostFrequentToy()
 	{
 		String name;
 		int max=Integer.MIN_VALUE;
-		for(Toy b:toyList)
+		for(Toy x:toyList)
 		{
-			if(max<b.getCount())
+			if(max<x.getCount())
 			{
-				max=b.getCount();
-				name=b.getName();
+				max=x.getCount();
+				name=x.getName();
 			}
 			return name;
 		}
 	}
 	
-	public static void getMostFrequentType()
+	public static String getMostFrequentType()
 	{
 		int cars=0;
 		int figures=0;
-		for(Toy b:toylist)
+		for(Toy x:toylist)
 		{
-			if(b.equals("Car"))
+			if(x.getName().equals("Car"))
 				cars+=1;
-			else if(b.equals("AF"))
+			else if(x.getName().equals("AF"))
 				figures+=1;
 		}
 		

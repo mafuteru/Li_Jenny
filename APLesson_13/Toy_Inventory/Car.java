@@ -14,9 +14,4 @@ public class Car extends Toy
 	{
 		return "Car";
 	}
-	
-	public String toString()
-	{
-		return getType()+"\n"+ super.toString()+"\n";
-	}
 }

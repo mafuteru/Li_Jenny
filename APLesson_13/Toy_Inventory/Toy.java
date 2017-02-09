@@ -15,9 +15,6 @@ public abstract class Toy
 		this.count=1;
 	}
 	
-	//Abstract class
-	public abstract String getType();
-	
 	//Modifiers
 	public void setName(String n)
 	{
@@ -39,6 +36,8 @@ public abstract class Toy
 	{
 		return count;
 	}
+	//Abstract class
+	public abstract String getType();
 	
 	public String toString()
 	{
