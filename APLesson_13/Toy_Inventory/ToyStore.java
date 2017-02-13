@@ -84,11 +84,6 @@ public class ToyStore
 	
 	public String toString()
 	{
-		String list="";
-		for(Toy x:toyList)
-		{
-			list+=x.toString()+", ";
-		}
-		return list;
+		return ""+toyList;
 	}
 }
