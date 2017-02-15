@@ -5,7 +5,7 @@ public class TicketDriver
 		WalkUp object = new WalkUp();
 		System.out.println(object);
 
-		Advance object2 = new Advance(17);
+		Advance object2 = new Advance(7);
 		System.out.println(object2);
 		
 		StudentAdvance object3 = new StudentAdvance(14);
