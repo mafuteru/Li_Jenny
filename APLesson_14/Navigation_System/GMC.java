@@ -14,8 +14,8 @@ public class GMC implements Location
 	
 	public void move(int xC, int yC)
 	{
-		x=x+xC;
-		y=y+yC;
+		x+=xC;
+		y+=yC;
 	}
 	
 	public double[] getLoc()

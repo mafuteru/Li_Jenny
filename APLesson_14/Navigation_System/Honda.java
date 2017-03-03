@@ -11,10 +11,10 @@ public class Honda implements Location
 		return (int)(Math.random()*999999)+100000;
 	}
 	
-	public void move(int xC, int yC)
+	public void move(double x, double y)
 	{
-		location[0]=location[0]+xC;
-		location[1]=location[1]+yC;
+		location[0]+= x;
+		location[1]+= y;
 	}
 	
 	public double[] getLoc()

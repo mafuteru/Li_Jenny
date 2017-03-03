@@ -3,6 +3,11 @@ public class Toyota implements Location
 {
 	private double[] location;
 	
+	public Toyota()
+	{
+		location= new double[2];
+	}
+	
 	public Toyota(String c)
 	{
 		location = new double[2];
@@ -16,10 +21,10 @@ public class Toyota implements Location
 		return (int)(Math.random()*999999)+100000;
 	}
 	
-	public void move(int xC, int yC)
+	public void move(double x, double y)
 	{
-		location[0]=location[0]+xC;
-		location[1]=location[1]+yC;
+		location[0]+= x;
+		location[1]+= y;
 	}
 	
 	public double[] getLoc()
