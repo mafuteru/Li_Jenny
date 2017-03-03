@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 public class Toyota implements Location
 {
-	private double[] location=new double[2];
+	private double[] location;
 	
 	public Toyota(String c)
 	{
-		double[]location = new double[2];
+		location = new double[2];
 		String[] cList = c.split(", ");
 		location[0]=Double.parseDouble(cList[0]);
 		location[1]=Double.parseDouble(cList[1]);
