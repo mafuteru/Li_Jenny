@@ -105,6 +105,8 @@ public class Magpie2
 				return findKeyword(phrase,goal,psn+1);
 			}
 		}
+		
+		return -1;
 		/* New String variable phrase = a more searchable version of statement.
 		 	-Use a combination of trim() and toLowerCase() modify statement.
 
@@ -133,7 +135,6 @@ public class Magpie2
 						--return psn
 
 				Otherwise, search for goal in phrase from psn + 1 forward */
-		return -1;
 	}
 
 	/** Override - this method is used if there are only 2 parameters...*/
