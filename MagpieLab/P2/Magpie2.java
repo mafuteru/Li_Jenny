@@ -8,6 +8,9 @@ public class Magpie2
 	public String getResponse(String statement)
 	{
 		String response = "";
+		int psn = findKeyword(statement,"you",0);
+		int psn2 = findKeyword(statement,"I",0);
+		
 		if (statement.length() == 0)
 		{
 			response = "Say something, please.";
@@ -47,28 +50,23 @@ public class Magpie2
 		response = transformIWantToStatement(statement);
 		}
 
+		// Look for a two word (you <something> me) pattern
+		else if (psn >=0 && findKeyword(statement,"me",psn)>=0)
+		{
+			response = transformYouMeStatement(statement);
+		}
+			
+		
+		else if (psn2 >=0 && findKeyword(statement,"you",psn2)>=0)
+		{
+			response = transformIYouStatement(statement);
+		}
+			
 		else
 		{
-			// Look for a two word (you <something> me) pattern
-			int psn = findKeyword(statement,"you",0);
-		
-			if (psn >=0 && findKeyword(statement,"me",psn)>=0)
-			{
-				response = transformYouMeStatement(statement);
-			}
-			
-			int psn2 = findKeyword(statement,"I",0);
-		
-			if (psn2 >=0 && findKeyword(statement,"you",psn2)>=0)
-			{
-				response = transformIYouStatement(statement);
-			}
-			
-			else
-			{
-				response = getRandomResponse();
-			}
+			response = getRandomResponse();
 		}
+		
 		return response;
 		
 	}
